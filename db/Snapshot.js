@@ -4,8 +4,7 @@ import connection from './Connection.js'
 const Snapshot = connection.define('snapshot', {
 
     id: {
-        type: sequelize.INTEGER,
-        autoIncrement: true,
+        type: sequelize.INTEGER,        
         allowNull: false,
         primaryKey: true
     },
