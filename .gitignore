@@ -2,4 +2,5 @@
 *.bat
 node_modules/
 .env
-populate.js
+populateSnapshots.js
+populateDailyProductions.js

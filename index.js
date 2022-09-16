@@ -1,5 +1,11 @@
 import dotenv from 'dotenv'
 dotenv.config()
-import fetchApiSnapshotsAndRegisterInDatabase from './app.js'
+import fetchApiSnapshotsAndRegisterInDatabase from './services/snapshotsService.js'
+import fetchApiDailyProductionAndRegisterInDatabase from './services/dailyProductionService.js'
 
-fetchApiSnapshotsAndRegisterInDatabase()
+async function runApp() {
+    await fetchApiSnapshotsAndRegisterInDatabase()
+    await fetchApiDailyProductionAndRegisterInDatabase()
+}
+
+runApp()

@@ -3,8 +3,7 @@ import log from 'log-to-file'
 
 export default async function getRexAuthenticationToken() {
 
-    const BASE_URL = process.env.BASE_URL
-    const URL = `${BASE_URL}/oauth/token`
+    const URL = 'https://open-api.rexagri.com/api/v1/oauth/token'
 
     const options = {
         method: 'POST',

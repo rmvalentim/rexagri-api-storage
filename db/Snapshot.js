@@ -5,6 +5,7 @@ const Snapshot = connection.define('snapshot', {
 
     id: {
         type: sequelize.INTEGER,
+        autoIncrement: true,
         allowNull: false,
         primaryKey: true
     },
